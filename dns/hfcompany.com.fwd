@@ -1,0 +1,19 @@
+$ORIGIN hfcompany.com.
+$TTL 3H
+
+@	IN SOA	servidor3.hfcompany.com. root@hfcompany.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN	NS	servidor3.hfcompany.com.
+@	IN	NS	servidor2.hfcompany.com.
+@       IN      NS      firewall.hfcompany.com.
+@       IN      NS      smart.hfcompany.com.
+
+servidor3	IN	A	192.168.50.10
+servidor2       IN      A       192.168.50.11
+firewall	IN      A       192.168.50.13
+smart       	IN      A       192.168.50.11
+www		IN	CNAME	servidor3
